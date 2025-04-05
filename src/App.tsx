@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Input from './components/Input/Input'
+import Search from './components/Search/Search'
 
 function App() {
   const [value, setValue] = React.useState('')
@@ -20,6 +21,7 @@ function App() {
         errMessage=""
         onChange={handleChange}
       />
+      <Search value={value} onChange={handleChange} />
     </div>
   )
 }
