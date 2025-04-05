@@ -14,10 +14,10 @@ function App() {
       <Input
         name="login"
         label="Login"
-        type="password"
+        type="text"
         value={value}
         placeholder=""
-        errMessage="sas"
+        errMessage=""
         onChange={handleChange}
       />
     </div>

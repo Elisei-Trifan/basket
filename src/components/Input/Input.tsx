@@ -11,6 +11,7 @@ interface InputProps {
   placeholder?: string
   label?: string
   errMessage?: string
+  disabled?: boolean
 }
 
 const Input: React.FC<InputProps> = ({
@@ -21,6 +22,7 @@ const Input: React.FC<InputProps> = ({
   onChange,
   label,
   errMessage,
+  disabled,
 }) => {
   const [schowPass, setShowPass] = React.useState(false)
 
@@ -43,6 +45,7 @@ const Input: React.FC<InputProps> = ({
           value={value}
           placeholder={placeholder}
           onChange={onChange}
+          disabled={disabled}
         />
         {type === 'password' && (
           <img
