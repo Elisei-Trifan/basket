@@ -1,0 +1,30 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "color-hex-length": null,
+    "no-descending-specificity": null,
+    "order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+      "display",
+      "width",
+      "height",
+      "margin",
+      "padding",
+      "font-size",
+      "font-family",
+      "font-weight",
+      "line-height",
+      "color",
+      "background-color",
+      "border",
+      "border-radius",
+      "text-align"
+    ]
+  }
+}

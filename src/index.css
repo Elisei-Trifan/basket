@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Avenir', sans-serif;
+  font-family: Avenir, sans-serif;
   font-weight: 500;
 }
 
@@ -14,7 +14,7 @@ code {
 }
 
 @font-face {
-  font-family: 'Avenir';
+  font-family: Avenir;
   src: url('/public/assets/fonts/Avenir-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
