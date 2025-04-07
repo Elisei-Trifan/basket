@@ -5,6 +5,7 @@ import Search from './components/Search/Search'
 import Button from './components/Button/Button'
 import Logo from './components/Logo/Logo'
 import Notification from './components/Notification/Notification'
+import Checkbox from './components/Checkbox/Checkbox'
 
 function App() {
   const [value, setValue] = React.useState('')
@@ -30,6 +31,7 @@ function App() {
       <Button type="cancel" text="Cancel" disabled />
       <Logo />
       <Notification />
+      <Checkbox text="Text" disabled />
     </div>
   )
 }

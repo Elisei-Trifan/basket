@@ -4,6 +4,7 @@
   "rules": {
     "color-hex-length": null,
     "no-descending-specificity": null,
+    "selector-class-pattern": null,
     "order/properties-order": [
       "content",
       "position",

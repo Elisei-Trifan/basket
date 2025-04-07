@@ -44,10 +44,10 @@
 }
 
 .add::after {
+  content: '+';
   width: 16px;
   font-size: 18px;
   color: inherit;
-  content: '+';
   margin-left: 8px;
 }
 
