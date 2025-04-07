@@ -1,0 +1,12 @@
+.link {
+  font-size: 14px;
+  line-height: 100%;
+  color: #e4163a;
+  text-decoration: underline;
+}
+
+.linkDis {
+  font-size: 14px;
+  color: #d1d1d1;
+  text-decoration: underline;
+}

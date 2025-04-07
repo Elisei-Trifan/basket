@@ -6,6 +6,7 @@ import Button from './components/Button/Button'
 import Logo from './components/Logo/Logo'
 import Notification from './components/Notification/Notification'
 import Checkbox from './components/Checkbox/Checkbox'
+import CustomLink from './components/Link/CustomLink'
 
 function App() {
   const [value, setValue] = React.useState('')
@@ -32,6 +33,7 @@ function App() {
       <Logo />
       <Notification />
       <Checkbox text="Text" disabled />
+      <CustomLink disabled to="/" text="Text" />
     </div>
   )
 }
