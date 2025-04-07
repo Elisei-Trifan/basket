@@ -3,6 +3,7 @@ import './App.css'
 import Input from './components/Input/Input'
 import Search from './components/Search/Search'
 import Button from './components/Button/Button'
+import Logo from './components/Logo/Logo'
 
 function App() {
   const [value, setValue] = React.useState('')
@@ -26,6 +27,7 @@ function App() {
       <Button type="sign" text="Sign In" disabled />
       <Button type="add" text="Add" />
       <Button type="cancel" text="Cancel" disabled />
+      <Logo />
     </div>
   )
 }

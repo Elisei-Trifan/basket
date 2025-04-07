@@ -1,0 +1,36 @@
+.logo {
+  display: flex;
+  width: 191px;
+  height: 48px;
+  font-size: 36px;
+  font-family: Orbitron, sans-serif;
+  line-height: 100%;
+  background-color: #344472;
+  border: 3px solid #d9ad3a;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0;
+}
+
+.text {
+  margin: 0;
+  color: white;
+}
+
+.num {
+  display: inline-flex;
+  color: red;
+  align-items: center;
+}
+
+.num::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 36px;
+  background-image: url('../../assets/icons/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0;
+}
