@@ -4,6 +4,7 @@ import Input from './components/Input/Input'
 import Search from './components/Search/Search'
 import Button from './components/Button/Button'
 import Logo from './components/Logo/Logo'
+import Notification from './components/Notification/Notification'
 
 function App() {
   const [value, setValue] = React.useState('')
@@ -28,6 +29,7 @@ function App() {
       <Button type="add" text="Add" />
       <Button type="cancel" text="Cancel" disabled />
       <Logo />
+      <Notification />
     </div>
   )
 }
