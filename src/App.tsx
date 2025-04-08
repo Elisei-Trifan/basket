@@ -7,6 +7,8 @@ import Logo from './components/Logo/Logo'
 import Notification from './components/Notification/Notification'
 import Checkbox from './components/Checkbox/Checkbox'
 import CustomLink from './components/Link/CustomLink'
+import Sidebar from './components/Sidebar/Sidebar'
+import Header from './components/Header/Header'
 
 function App() {
   const [value, setValue] = React.useState('')
@@ -17,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <Input
+      {/* <Input
         name="login"
         label="Login"
         type="password"
@@ -33,7 +35,10 @@ function App() {
       <Logo />
       <Notification />
       <Checkbox text="Text" disabled />
-      <CustomLink disabled to="/" text="Text" />
+      <CustomLink disabled to="/" text="Text" /> */}
+      {/* <Sidebar /> */}
+      <Header fullName="John Smith" />
+      <Sidebar />
     </div>
   )
 }

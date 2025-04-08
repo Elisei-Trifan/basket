@@ -1,0 +1,30 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding-left: 51px;
+  padding-right: 51px;
+  box-shadow: 0 1px 10px 0 #d1d1d1;
+  z-index: 100;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  font-size: 14px;
+  line-height: 24px;
+  color: #303030;
+  margin-right: 16px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}

@@ -6,9 +6,10 @@ interface LinkProps {
   to: string
   text: string
   disabled?: boolean
+  children?: any
 }
 
-const CustomLink: React.FC<LinkProps> = ({ to, text, disabled }) => {
+const CustomLink: React.FC<LinkProps> = ({ to, text, disabled, children }) => {
   return (
     <Link
       className={disabled ? styles.linkDis : styles.link}
