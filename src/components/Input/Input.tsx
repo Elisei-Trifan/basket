@@ -24,7 +24,7 @@ const Input: React.FC<InputProps> = ({
   errMessage,
   disabled,
 }) => {
-  const [schowPass, setShowPass] = React.useState(false)
+  const [showPass, setShowPass] = React.useState(false)
 
   const toggleShowPass = () => {
     setShowPass((prev) => !prev)
@@ -41,7 +41,7 @@ const Input: React.FC<InputProps> = ({
         <input
           id={name}
           className={`${styles.input} ${errMessage ? styles.inputError : ''} `}
-          type={type === 'password' && schowPass ? 'text' : type}
+          type={type === 'password' && showPass ? 'text' : type}
           value={value}
           placeholder={placeholder}
           onChange={onChange}
@@ -49,8 +49,8 @@ const Input: React.FC<InputProps> = ({
         />
         {type === 'password' && (
           <img
-            src={schowPass ? eye : closeEye}
-            alt={schowPass ? 'eye' : 'closeEye'}
+            src={showPass ? eye : closeEye}
+            alt={showPass ? 'eye' : 'closeEye'}
             onClick={toggleShowPass}
             className={styles.icon}
           />

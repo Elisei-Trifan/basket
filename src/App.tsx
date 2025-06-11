@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Input
+       <Input
         name="login"
         label="Login"
         type="password"
@@ -35,8 +35,8 @@ function App() {
       <Logo />
       <Notification />
       <Checkbox text="Text" disabled />
-      <CustomLink disabled to="/" text="Text" /> */}
-      {/* <Sidebar /> */}
+      <CustomLink disabled to="/" text="Text" />
+      <Sidebar />
       <Header fullName="John Smith" />
       <Sidebar />
     </div>
