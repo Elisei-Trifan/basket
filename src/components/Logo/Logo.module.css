@@ -5,8 +5,8 @@
   font-size: 36px;
   font-family: Orbitron, sans-serif;
   line-height: 100%;
-  background-color: #344472;
-  border: 3px solid #d9ad3a;
+  background-color: var(--blue);
+  border: 3px solid var(--yellow);
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -15,12 +15,12 @@
 
 .text {
   margin: 0;
-  color: white;
+  color: var(--white);
 }
 
 .num {
   display: inline-flex;
-  color: red;
+  color: var(--red);
   align-items: center;
 }
 

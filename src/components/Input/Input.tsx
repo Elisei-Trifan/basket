@@ -37,7 +37,7 @@ const Input: React.FC<InputProps> = ({
           {label}
         </label>
       )}
-      <div className={styles.inputWrapp}>
+      <div className={styles.inputWrap}>
         <input
           id={name}
           className={`${styles.input} ${errMessage ? styles.inputError : ''} `}

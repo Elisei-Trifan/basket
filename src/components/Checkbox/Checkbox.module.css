@@ -14,7 +14,7 @@
   width: 16px;
   height: 16px;
   background-color: white;
-  border: 1px solid #9c9c9c;
+  border: 1px solid var(--lightGrey);
   border-radius: 2px;
   margin-right: 8px;
   transition: background-color 0.3s, border-color 0.3s;
@@ -25,14 +25,14 @@
   width: 16px;
   height: 16px;
   background-color: white;
-  border: 1px solid #ff768e;
+  border: 1px solid var(--lightestRed);
   border-radius: 2px;
   margin-right: 8px;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .input:not(:disabled):hover + .checkbox {
-  border: 1px solid #e4163a;
+  border: 1px solid var(--red);
 }
 
 .input:disabled + .checkbox {
@@ -41,13 +41,13 @@
 }
 
 .input:checked + .checkbox {
-  background-color: #e4163a; /* Цвет для активного состояния */
-  border-color: #e4163a;
+  background-color: var(--red); /* Цвет для активного состояния */
+  border-color: var(--red);
 }
 
 .input:disabled:checked + .checkbox {
-  background-color: #d1d1d1;
-  border-color: #d1d1d1;
+  background-color: var(--lightestGrey);
+  border-color: var(--lightestGrey);
 }
 
 .input:checked + .checkbox::after {
@@ -63,20 +63,20 @@
 }
 
 .input:disabled + .checkbox + .text {
-  color: #d1d1d1;
+  color: var(--lightestGrey);
   cursor: not-allowed;
 }
 
 .text {
-  color: #9c9c9c;
+  color: var(--lightGrey);
 }
 
 .textErr {
-  color: #ff768e;
+  color: var(--lightestRed);
 }
 
 .error {
   margin: 0;
   font-size: 12px;
-  color: #ff768e;
+  color: var(--lightestRed);
 }

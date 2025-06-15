@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/colors.css'
 import './App.css'
 import Input from './components/Input/Input'
 import Search from './components/Search/Search'

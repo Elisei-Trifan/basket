@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 140px;
   height: calc(100vh - 80px);
-  background-color: #f1f1f1;
+  background-color: var(--lightestWhite);
 }
 
 .wrapp {
@@ -35,7 +35,7 @@
 .text {
   font-size: 12px;
   line-height: 150%;
-  color: #9c9c9c;
+  color: var(--lightGrey);
   margin-top: 4px;
 }
 
@@ -52,12 +52,12 @@
 .signOutImg {
   width: 24px;
   height: 24px;
-  fill: #ff768e;
+  fill: var(--lightestRed);
   margin-bottom: 4px;
 }
 
 .signOutText {
   font-size: 12px;
   line-height: 150%;
-  color: #ff768e;
+  color: var(--lightestRed);
 }

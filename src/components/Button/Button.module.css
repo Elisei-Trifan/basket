@@ -10,33 +10,33 @@
 .sign {
   width: 365px;
   height: 40px;
-  color: #ffffff;
-  background-color: #e4163a;
+  color: var(--white);
+  background-color: var(--red);
   border: none;
 }
 
 .sign:hover,
 .add:hover {
-  background-color: #ff5761;
+  background-color: var(--lightRed);
 }
 
 .sign:active,
 .add:active {
-  background-color: #c60e2e;
+  background-color: var(--darkRed);
 }
 
 .sign:disabled,
 .add:disabled {
-  color: #d1d1d1;
-  background-color: #f6f6f6;
+  color: var(--lightestGrey);
+  background-color: var(--lightestGreyWhite);
 }
 
 .add {
   display: flex;
   width: 104px;
   height: 40px;
-  color: #ffffff;
-  background-color: #e4163a;
+  color: var(--white);
+  background-color: var(--red);
   border: none;
   justify-content: center;
   align-items: center;
@@ -53,20 +53,20 @@
 .cancel {
   width: 171px;
   height: 40px;
-  color: #9c9c9c;
+  color: var(--lightGrey);
   background-color: white;
-  border: 1px solid #9c9c9c;
+  border: 1px solid var(--lightGrey);
 }
 
 .cancel:hover {
-  background-color: #d1d1d1;
+  background-color: var(--lightestGrey);
 }
 
 .cancel:active {
-  background-color: #707070;
+  background-color: var(--grey);
 }
 
 .cancel:disabled {
-  color: #d1d1d1;
-  background-color: #f6f6f6;
+  color: var(--lightestGrey);
+  background-color: var(--lightestGreyWhite);
 }
