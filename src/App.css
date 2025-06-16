@@ -1,1 +1,14 @@
+/*Стили для кастомного селекта */
+.custom-select__option:active {
+    background-color: var(--red) !important;
+    color: var(--white);
+}
 
+.custom-select__option:hover {
+    background-color: var(--lightestRed);
+    color: var(--white);
+}
+
+.custom-select__option {
+    outline: none;
+}

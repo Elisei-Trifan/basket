@@ -4,62 +4,62 @@ import eye from '../../assets/icons/eye_rounded.svg'
 import closeEye from '../../assets/icons/close_eye_rounded.svg'
 
 interface InputProps {
-  type: string
-  value: string
-  name: string
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-  placeholder?: string
-  label?: string
-  errMessage?: string
-  disabled?: boolean
+    type: string
+    value: string
+    name: string
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+    placeholder?: string
+    label?: string
+    errMessage?: string
+    disabled?: boolean
 }
 
 const Input: React.FC<InputProps> = ({
-  type,
-  value,
-  placeholder,
-  name,
-  onChange,
-  label,
-  errMessage,
-  disabled,
-}) => {
-  const [showPass, setShowPass] = React.useState(false)
+                                         type,
+                                         value,
+                                         placeholder,
+                                         name,
+                                         onChange,
+                                         label,
+                                         errMessage,
+                                         disabled,
+                                     }) => {
+    const [showPass, setShowPass] = React.useState(false)
 
-  const toggleShowPass = () => {
-    setShowPass((prev) => !prev)
-  }
+    const toggleShowPass = () => {
+        setShowPass((prev) => !prev)
+    }
 
-  return (
-    <div className={styles.inputContainer}>
-      {label && (
-        <label htmlFor={name} className={styles.label}>
-          {label}
-        </label>
-      )}
-      <div className={styles.inputWrap}>
-        <input
-          id={name}
-          className={`${styles.input} ${errMessage ? styles.inputError : ''} `}
-          type={type === 'password' && showPass ? 'text' : type}
-          value={value}
-          placeholder={placeholder}
-          onChange={onChange}
-          disabled={disabled}
-        />
-        {type === 'password' && (
-          <img
-            src={showPass ? eye : closeEye}
-            alt={showPass ? 'eye' : 'closeEye'}
-            onClick={toggleShowPass}
-            className={styles.icon}
-          />
-        )}
-      </div>
+    return (
+        <div className={styles.inputContainer}>
+            {label && (
+                <label htmlFor={name} className={styles.label}>
+                    {label}
+                </label>
+            )}
+            <div className={styles.inputWrap}>
+                <input
+                    id={name}
+                    className={`${styles.input} ${errMessage ? styles.inputError : ''} `}
+                    type={type === 'password' && showPass ? 'text' : type}
+                    value={value}
+                    placeholder={placeholder}
+                    onChange={onChange}
+                    disabled={disabled}
+                />
+                {type === 'password' && (
+                    <img
+                        src={showPass ? eye : closeEye}
+                        alt={showPass ? 'eye' : 'closeEye'}
+                        onClick={toggleShowPass}
+                        className={styles.icon}
+                    />
+                )}
+            </div>
 
-      {errMessage && <span className={styles.errMessage}> {errMessage} </span>}
-    </div>
-  )
+            {errMessage && <span className={styles.errMessage}> {errMessage} </span>}
+        </div>
+    )
 }
 
 export default Input
