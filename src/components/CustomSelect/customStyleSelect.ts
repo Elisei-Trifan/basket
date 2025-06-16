@@ -1,13 +1,11 @@
 import {StylesConfig} from "react-select";
 import {OptionType} from "../../types/OptionType";
 
-export const countStyleSelect: StylesConfig<OptionType, boolean> = {
-    container: (base, state) => ({
+export const customStyleSelect: StylesConfig<OptionType, boolean> = {
+    container: (base) => ({
         ...base,
-        width: 88,
+        width: 366,
         height: 40,
-        outline: state.isFocused ? 'none' : 'none',
-        margin: '120px',
     }),
     control: (base, state) => ({
         ...base,
@@ -18,12 +16,6 @@ export const countStyleSelect: StylesConfig<OptionType, boolean> = {
             borderColor: 'var(--lightestGrey)',
         },
     }),
-    singleValue: (base) => ({
-        ...base,
-        textAlign: 'center',
-        width: '100%',
-    }),
-
     option: (base, state) => ({
         ...base,
         paddingLeft: 22,
@@ -31,6 +23,4 @@ export const countStyleSelect: StylesConfig<OptionType, boolean> = {
         color: 'var(--lightGrey)',
         cursor: 'pointer',
     }),
-
-
 }

@@ -1,4 +1,4 @@
-/*Стили для кастомного селекта */
+/*Стили для селекта  */
 .custom-select__option:active {
     background-color: var(--red) !important;
     color: var(--white);
