@@ -1,18 +1,22 @@
-import React from 'react'
-import styles from './Checkbox.module.css'
+import React from "react";
+import styles from "./Checkbox.module.css";
 
 interface CheckboxProps {
-  text: string
-  disabled?: boolean
-  error?: string
+  text: string;
+  disabled?: boolean;
+  error?: string;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({ text, disabled, error }) => {
-  const [checked, setChecked] = React.useState(false)
+export const Checkbox: React.FC<CheckboxProps> = ({
+  text,
+  disabled,
+  error,
+}) => {
+  const [checked, setChecked] = React.useState(false);
 
   const handleChange = () => {
-    setChecked((prev) => !prev)
-  }
+    setChecked((prev) => !prev);
+  };
 
   return (
     <>
@@ -29,7 +33,5 @@ const Checkbox: React.FC<CheckboxProps> = ({ text, disabled, error }) => {
       </label>
       {error && <p className={styles.error}>{error}</p>}
     </>
-  )
-}
-
-export default Checkbox
+  );
+};

@@ -1,63 +1,63 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 140px;
-  height: calc(100vh - 80px);
-  background-color: var(--lightestWhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    height: calc(100vh - 80px);
+    background-color: var(--lightestWhite);
 }
 
 .wrapp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
 }
 
 .wrapp > *:nth-child(2) {
-  margin-top: 36px;
+    margin-top: 36px;
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: none;
-  outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    outline: none;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
+.personIcon {
+    width: 24px;
+    height: 24px;
 }
 
 .text {
-  font-size: 12px;
-  line-height: 150%;
-  color: var(--lightGrey);
-  margin-top: 4px;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--lightGrey);
+    margin-top: 4px;
 }
 
 .signOut {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 32px;
 }
 
-.signOutImg {
-  width: 24px;
-  height: 24px;
-  fill: var(--lightestRed);
-  margin-bottom: 4px;
+.inputIcon {
+    width: 24px;
+    height: 24px;
+    fill: var(--lightestRed);
+    margin-bottom: 4px;
 }
 
 .signOutText {
-  font-size: 12px;
-  line-height: 150%;
-  color: var(--lightestRed);
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--lightestRed);
 }

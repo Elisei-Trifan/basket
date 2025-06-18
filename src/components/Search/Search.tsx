@@ -1,13 +1,13 @@
-import React from 'react'
-import styles from './Search.module.css'
-import searchIcon from '../../assets/icons/search_rounded.svg'
+import React from "react";
+import styles from "./Search.module.css";
+import { SearchIcon } from "../../assets/icons/SearchIcon";
 
 interface SearchProps {
-  value: string
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Search: React.FC<SearchProps> = ({ value, onChange }) => {
+export const Search: React.FC<SearchProps> = ({ value, onChange }) => {
   return (
     <div className={styles.searchContainer}>
       <input
@@ -17,9 +17,7 @@ const Search: React.FC<SearchProps> = ({ value, onChange }) => {
         placeholder="Search..."
         onChange={onChange}
       />
-      <img src={searchIcon} alt="search" className={styles.icon} />
+      <SearchIcon className={styles.icon} />
     </div>
-  )
-}
-
-export default Search
+  );
+};
