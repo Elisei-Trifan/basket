@@ -15,6 +15,7 @@ import { Input } from "./components/Input/Input";
 // import { countStyleSelect } from "./components/CustomSelect/countStyleSelect";
 // import { multiStyleSelect } from "./components/CustomSelect/multiStyleSelect";
 import { CardDetailsTeam } from "./components/CardDetailsTeam/CardDetailsTeam";
+import { CardDetailsPlayer } from "./components/CardDetailsPlayer/CardDetailsPlayer";
 
 export function App() {
   const [value, setValue] = React.useState("");
@@ -83,7 +84,17 @@ export function App() {
       {/*  classNamePrefix="custom-select"*/}
       {/*  menuPlacement="top"*/}
       {/*/>*/}
-      <CardDetailsTeam />
+      {/*<CardDetailsTeam />*/}
+      <CardDetailsPlayer
+        type={"Player"}
+        text={"Greg Whittington"}
+        position={"Forward"}
+        number={22}
+        teamName={"Denver Nuggets"}
+        height={208}
+        weight={95}
+        age={30}
+      />
     </div>
   );
 }

@@ -1,23 +1,12 @@
 import React from "react";
 import styles from "./CardDetailsTeam.module.css";
-import { CreateIcon } from "../../assets/icons/CreateIcon";
-import { DeleteIcon } from "../../assets/icons/DeleteIcon";
 import { DenverTeam } from "../../assets/Image/DenverTeam";
+import { CardDetailsHeader } from "../CardDetailsHeader/CardDetailsHeader";
 
 export const CardDetailsTeam = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <div className={styles.containerText}>
-          <span className={styles.text}>Teams</span>
-          {" / "}
-          <span className={styles.text}>Denver Nuggets</span>
-        </div>
-        <div className={styles.iconsContainer}>
-          <CreateIcon className={styles.createIcon} />
-          <DeleteIcon className={styles.deleteIcon} />
-        </div>
-      </div>
+      <CardDetailsHeader type={"Teams"} text={"Denver Nuggets"} />
       <div className={styles.contentContainer}>
         <DenverTeam />
         <div className={styles.descriptionContainer}>

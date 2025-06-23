@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    background-color: var(--white);
+    width: 100%;
+    height: 69px;
+}
+
+.containerText {
+    width: 203px;
+    height: 21px;
+
+    span:nth-child(2) {
+        color: var(--lightGrey);
+    }
+}
+
+.text {
+    color: var(--red);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.deleteIcon {
+    width: 24px;
+    height: 24px;
+    fill: var(--red);
+    margin-left: 16px;
+}
