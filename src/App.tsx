@@ -17,6 +17,7 @@ import { Input } from "./components/Input/Input";
 import { CardDetailsTeam } from "./components/CardDetailsTeam/CardDetailsTeam";
 import { CardDetailsPlayer } from "./components/CardDetailsPlayer/CardDetailsPlayer";
 import { CardTeamsOrPlayer } from "./components/CardTeamsOrPlayer/CardTeamsOrPlayer";
+import { ImgUpload } from "./components/ImgUpload/ImgUpload";
 
 export function App() {
   const [value, setValue] = React.useState("");
@@ -100,15 +101,16 @@ export function App() {
       {/*  birthday={new Date("1994-11-13")}*/}
       {/*  name={"Ricki"}*/}
       {/*/>*/}
-      <CardTeamsOrPlayer
-        name={"Portland trail blazers"}
-        foundationYear={1975}
-      />
-      <CardTeamsOrPlayer
-        name={"Jaylen Adams"}
-        position={"10"}
-        teamName={"Portland trail blazers"}
-      />
+      {/*<CardTeamsOrPlayer*/}
+      {/*  name={"Portland trail blazers"}*/}
+      {/*  foundationYear={1975}*/}
+      {/*/>*/}
+      {/*<CardTeamsOrPlayer*/}
+      {/*  name={"Jaylen Adams"}*/}
+      {/*  position={"10"}*/}
+      {/*  teamName={"Portland trail blazers"}*/}
+      {/*/>*/}
+      <ImgUpload />
     </div>
   );
 }
