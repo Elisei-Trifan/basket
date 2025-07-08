@@ -2,68 +2,66 @@ import React from "react";
 import styles from "../CardDetailsPlayer/CardDetailsPlayer.module.css";
 import { CardDetailsHeader } from "../CardDetailsHeader/CardDetailsHeader";
 import greg from "../../assets/Image/Greg.png";
+import { PlayerTeamNameDto } from "../../api";
+import { getAge } from "../../utils/getAge";
 
-interface CardDetailsPlayerProps {
-  type: string;
-  text: string;
-  number: number;
-  position: string;
-  teamName: string;
-  height: number;
-  weight: number;
-  age: number;
-}
-
-export const CardDetailsPlayer: React.FC<CardDetailsPlayerProps> = ({
-  type,
-  text,
+export const CardDetailsPlayer: React.FC<PlayerTeamNameDto> = ({
   position,
   number,
   teamName,
   height,
   weight,
-  age,
+  birthday,
+  name,
 }) => {
+  const age = getAge(birthday);
+
   return (
     <div className={styles.container}>
-      <CardDetailsHeader type={type} text={text} />
+      <CardDetailsHeader type={"Player"} text={name} />
       <div className={styles.contentContainer}>
         <div className={styles.photoCont}>
           <img src={greg} alt={"Greg"} className={styles.photo} />
         </div>
         <div className={styles.descriptionContainer}>
-          <p>{text}</p>
-          <p>
-            {"#"}
-            {number}
-          </p>
+          <p>{name}</p>
+          {number && (
+            <p>
+              {"#"}
+              {number}
+            </p>
+          )}
           <div className={styles.textContainer}>
             <div className={styles.textContainerLeft}>
               <p>Position</p>
-              <p>{position}</p>
+              {position && <p>{position}</p>}
             </div>
             <div className={styles.textContainerRight}>
               <p>Team</p>
-              <p>{teamName}</p>
+              {teamName && <p>{teamName}</p>}
             </div>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.textContainerLeft}>
               <p>Height</p>
-              <p>
-                {height} {"cm"}
-              </p>
+              {height && (
+                <p>
+                  {height} {"cm"}
+                </p>
+              )}
             </div>
             <div className={styles.textContainerRight}>
               <p>Weight</p>
-              <p>
-                {weight} {"kg"}
-              </p>
+              {weight && (
+                <p>
+                  {weight} {"kg"}
+                </p>
+              )}
             </div>
           </div>
           <div className={styles.textContainerRight}>
             <p>Age</p>
-            <p>{age}</p>
+            {birthday && <p>{age}</p>}
           </div>
         </div>
       </div>

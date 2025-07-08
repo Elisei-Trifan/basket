@@ -16,6 +16,7 @@ import { Input } from "./components/Input/Input";
 // import { multiStyleSelect } from "./components/CustomSelect/multiStyleSelect";
 import { CardDetailsTeam } from "./components/CardDetailsTeam/CardDetailsTeam";
 import { CardDetailsPlayer } from "./components/CardDetailsPlayer/CardDetailsPlayer";
+import { CardTeamsOrPlayer } from "./components/CardTeamsOrPlayer/CardTeamsOrPlayer";
 
 export function App() {
   const [value, setValue] = React.useState("");
@@ -46,15 +47,15 @@ export function App() {
 
   return (
     <div className="App">
-      <Input
-        name="login"
-        label="Login"
-        type="password"
-        value={value}
-        placeholder=""
-        errMessage=""
-        onChange={handleChange}
-      />
+      {/*<Input*/}
+      {/*  name="login"*/}
+      {/*  label="Login"*/}
+      {/*  type="password"*/}
+      {/*  value={value}*/}
+      {/*  placeholder=""*/}
+      {/*  errMessage=""*/}
+      {/*  onChange={handleChange}*/}
+      {/*/>*/}
       {/*<Search value={value} onChange={handleChange} />*/}
       {/*<Button type="sign" text="Sign In" disabled />*/}
       {/*<Button type="add" text="Add" />*/}
@@ -84,16 +85,29 @@ export function App() {
       {/*  classNamePrefix="custom-select"*/}
       {/*  menuPlacement="top"*/}
       {/*/>*/}
-      {/*<CardDetailsTeam />*/}
-      <CardDetailsPlayer
-        type={"Player"}
-        text={"Greg Whittington"}
-        position={"Forward"}
-        number={22}
-        teamName={"Denver Nuggets"}
-        height={208}
-        weight={95}
-        age={30}
+      {/*<CardDetailsTeam*/}
+      {/*  foundationYear={1970}*/}
+      {/*  division={"Northwestern"}*/}
+      {/*  conference={"Western"}*/}
+      {/*  name="user"*/}
+      {/*/>*/}
+      {/*<CardDetailsPlayer*/}
+      {/*  position={"Forward"}*/}
+      {/*  number={22}*/}
+      {/*  teamName={"Denver Nuggets"}*/}
+      {/*  height={208}*/}
+      {/*  weight={95}*/}
+      {/*  birthday={new Date("1994-11-13")}*/}
+      {/*  name={"Ricki"}*/}
+      {/*/>*/}
+      <CardTeamsOrPlayer
+        name={"Portland trail blazers"}
+        foundationYear={1975}
+      />
+      <CardTeamsOrPlayer
+        name={"Jaylen Adams"}
+        position={"10"}
+        teamName={"Portland trail blazers"}
       />
     </div>
   );

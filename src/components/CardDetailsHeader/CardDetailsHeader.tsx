@@ -2,9 +2,10 @@ import React from "react";
 import styles from "../CardDetailsHeader/CardDetailsHeader.module.css";
 import { CreateIcon } from "../../assets/icons/CreateIcon";
 import { DeleteIcon } from "../../assets/icons/DeleteIcon";
+import { HeaderType } from "../../types/HeaderType";
 
 interface CardDetailsHeaderProps {
-  type: string;
+  type: HeaderType;
   text: string;
 }
 
