@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./ImgUpload.module.css";
 import { AddPhoto } from "../../assets/icons/AddPhoto";
 

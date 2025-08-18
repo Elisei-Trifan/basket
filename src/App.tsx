@@ -18,6 +18,8 @@ import { CardDetailsTeam } from "./components/CardDetailsTeam/CardDetailsTeam";
 import { CardDetailsPlayer } from "./components/CardDetailsPlayer/CardDetailsPlayer";
 import { CardTeamsOrPlayer } from "./components/CardTeamsOrPlayer/CardTeamsOrPlayer";
 import { ImgUpload } from "./components/ImgUpload/ImgUpload";
+import { Ex } from "./components/ex";
+import { Ex2 } from "./components/ex2";
 
 export function App() {
   const [value, setValue] = React.useState("");
@@ -110,6 +112,8 @@ export function App() {
       {/*  position={"10"}*/}
       {/*  teamName={"Portland trail blazers"}*/}
       {/*/>*/}
+      {/*<Ex />*/}
+      <Ex2 />
       <ImgUpload />
     </div>
   );

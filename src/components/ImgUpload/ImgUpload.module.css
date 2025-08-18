@@ -9,8 +9,8 @@
     border-radius: 10px;
     opacity: 50%;
     cursor: pointer;
-    overflow: hidden;
     margin: 80px;
+    overflow: hidden;
 }
 
 .preview {
