@@ -5,6 +5,7 @@
 .container {
     width: 180px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .button {
