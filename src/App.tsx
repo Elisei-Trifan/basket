@@ -10,16 +10,17 @@ import { Input } from "./components/Input/Input";
 // import { CustomLink } from "./components/Link/CustomLink";
 // import { Sidebar } from "./components/Sidebar/Sidebar";
 // import { Header } from "./components/Header/Header";
-// import { CustomSelect } from "./components/CustomSelect/CustomSelect";
+import { CustomSelect } from "./components/CustomSelect/CustomSelect";
 // import { customStyleSelect } from "./components/CustomSelect/customStyleSelect";
 // import { countStyleSelect } from "./components/CustomSelect/countStyleSelect";
-// import { multiStyleSelect } from "./components/CustomSelect/multiStyleSelect";
+import { multiStyleSelect } from "./components/CustomSelect/multiStyleSelect";
 import { CardDetailsTeam } from "./components/CardDetailsTeam/CardDetailsTeam";
 import { CardDetailsPlayer } from "./components/CardDetailsPlayer/CardDetailsPlayer";
 import { CardTeamsOrPlayer } from "./components/CardTeamsOrPlayer/CardTeamsOrPlayer";
 import { ImgUpload } from "./components/ImgUpload/ImgUpload";
 import { Ex } from "./components/ex";
 import { Ex2 } from "./components/ex2";
+import { Table } from "./components/Table/Table";
 
 export function App() {
   const [value, setValue] = React.useState("");
@@ -40,13 +41,13 @@ export function App() {
   //   { value: 24, label: "24" },
   // ];
   //
-  // const players = [
-  //   { value: "Center Forward", label: "Center Forward" },
-  //   { value: "Guard Forward", label: "Guard Forward" },
-  //   { value: "Forward", label: "Forward" },
-  //   { value: "Center", label: "Center" },
-  //   { value: "Guard", label: "Guard" },
-  // ];
+  const players = [
+    { value: "Center Forward", label: "Center Forward" },
+    { value: "Guard Forward", label: "Guard Forward" },
+    { value: "Forward", label: "Forward" },
+    { value: "Center", label: "Center" },
+    { value: "Guard", label: "Guard" },
+  ];
 
   return (
     <div className="App">
@@ -75,12 +76,12 @@ export function App() {
       {/*  styles={customStyleSelect}*/}
       {/*  classNamePrefix="custom-select"*/}
       {/*/>*/}
-      {/*<CustomSelect*/}
-      {/*  data={players}*/}
-      {/*  styles={multiStyleSelect}*/}
-      {/*  isMulti={true}*/}
-      {/*  classNamePrefix="custom-select"*/}
-      {/*/>*/}
+      <CustomSelect
+        data={players}
+        styles={multiStyleSelect}
+        isMulti={true}
+        classNamePrefix="custom-select"
+      />
       {/*<CustomSelect*/}
       {/*  data={numbers}*/}
       {/*  styles={countStyleSelect}*/}
@@ -112,9 +113,8 @@ export function App() {
       {/*  position={"10"}*/}
       {/*  teamName={"Portland trail blazers"}*/}
       {/*/>*/}
-      {/*<Ex />*/}
-      <Ex2 />
-      <ImgUpload />
+      {/*<ImgUpload />*/}
+      <Table />
     </div>
   );
 }
