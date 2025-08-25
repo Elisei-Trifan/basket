@@ -1,72 +1,72 @@
 .btn {
-  padding: 0;
-  font-size: 15px;
-  line-height: 24px;
-  border-radius: 4px;
-  text-align: center;
-  letter-spacing: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0;
 }
 
 .sign {
-  width: 365px;
-  height: 40px;
-  color: var(--white);
-  background-color: var(--red);
-  border: none;
+    width: 100%;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--red);
+    border: none;
 }
 
 .sign:hover,
 .add:hover {
-  background-color: var(--lightRed);
+    background-color: var(--lightRed);
 }
 
 .sign:active,
 .add:active {
-  background-color: var(--darkRed);
+    background-color: var(--darkRed);
 }
 
 .sign:disabled,
 .add:disabled {
-  color: var(--lightestGrey);
-  background-color: var(--lightestGreyWhite);
+    color: var(--lightestGrey);
+    background-color: var(--lightestGreyWhite);
 }
 
 .add {
-  display: flex;
-  width: 104px;
-  height: 40px;
-  color: var(--white);
-  background-color: var(--red);
-  border: none;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    width: 104px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--red);
+    border: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .add::after {
-  content: '+';
-  width: 16px;
-  font-size: 18px;
-  color: inherit;
-  margin-left: 8px;
+    content: '+';
+    width: 16px;
+    font-size: 18px;
+    color: inherit;
+    margin-left: 8px;
 }
 
 .cancel {
-  width: 171px;
-  height: 40px;
-  color: var(--lightGrey);
-  background-color: white;
-  border: 1px solid var(--lightGrey);
+    width: 171px;
+    height: 40px;
+    color: var(--lightGrey);
+    background-color: white;
+    border: 1px solid var(--lightGrey);
 }
 
 .cancel:hover {
-  background-color: var(--lightestGrey);
+    background-color: var(--lightestGrey);
 }
 
 .cancel:active {
-  background-color: var(--grey);
+    background-color: var(--grey);
 }
 
 .cancel:disabled {
-  color: var(--lightestGrey);
-  background-color: var(--lightestGreyWhite);
+    color: var(--lightestGrey);
+    background-color: var(--lightestGreyWhite);
 }

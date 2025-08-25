@@ -1,0 +1,7 @@
+.text {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 24px;
+}

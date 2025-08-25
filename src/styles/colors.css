@@ -14,4 +14,15 @@
     --lightestRed: #ff768e;
     --yellow: #d9ad3a;
     --blue: #344472;
+    --lightBlue: #F5FBFF;
+
+
+    --tablet: 1024px;
+    --mobile: 768px;
+    --small: 375px;
+
+
+    --header-height: 80px;
+    --signInput-weight: 42%;
+
 }
