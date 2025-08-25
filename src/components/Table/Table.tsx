@@ -21,18 +21,11 @@ export const Table = () => {
   return (
     <>
       <table className={styles.table}>
-        <thead>
-          <TableTitle />
-        </thead>
-
-        <thead>
-          <TableHead />
-        </thead>
-        <tbody>
-          {rows.map((row) => (
-            <TableRow row={row} />
-          ))}
-        </tbody>
+        <TableTitle />
+        <TableHead />
+        {rows.map((row) => (
+          <TableRow row={row} />
+        ))}
       </table>
     </>
   );
