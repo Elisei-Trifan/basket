@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: var(--header-height);
     padding-left: 51px;
     padding-right: 51px;
     box-shadow: 0 1px 10px 0 var(--lightestGrey);

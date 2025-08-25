@@ -9,10 +9,10 @@ import { Input } from "./components/Input/Input";
 // import { Checkbox } from "./components/Checkbox/Checkbox";
 // import { CustomLink } from "./components/Link/CustomLink";
 // import { Sidebar } from "./components/Sidebar/Sidebar";
-// import { Header } from "./components/Header/Header";
+import { Header } from "./components/Header/Header";
 import { CustomSelect } from "./components/CustomSelect/CustomSelect";
-// import { customStyleSelect } from "./components/CustomSelect/customStyleSelect";
-// import { countStyleSelect } from "./components/CustomSelect/countStyleSelect";
+import { customStyleSelect } from "./components/CustomSelect/customStyleSelect";
+import { countStyleSelect } from "./components/CustomSelect/countStyleSelect";
 import { multiStyleSelect } from "./components/CustomSelect/multiStyleSelect";
 import { CardDetailsTeam } from "./components/CardDetailsTeam/CardDetailsTeam";
 import { CardDetailsPlayer } from "./components/CardDetailsPlayer/CardDetailsPlayer";
@@ -21,13 +21,14 @@ import { ImgUpload } from "./components/ImgUpload/ImgUpload";
 import { Ex } from "./components/ex";
 import { Ex2 } from "./components/ex2";
 import { Table } from "./components/Table/Table";
+import { MobileSidebar } from "./components/MobileSidebar/MobileSidebar";
 
 export function App() {
-  const [value, setValue] = React.useState("");
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
-  };
+  // const [value, setValue] = React.useState("");
+  //
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setValue(e.target.value);
+  // };
 
   // const data = [
   //   { value: "John Smith", label: "John Smith" },
@@ -41,13 +42,13 @@ export function App() {
   //   { value: 24, label: "24" },
   // ];
   //
-  const players = [
-    { value: "Center Forward", label: "Center Forward" },
-    { value: "Guard Forward", label: "Guard Forward" },
-    { value: "Forward", label: "Forward" },
-    { value: "Center", label: "Center" },
-    { value: "Guard", label: "Guard" },
-  ];
+  // const players = [
+  //   { value: "Center Forward", label: "Center Forward" },
+  //   { value: "Guard Forward", label: "Guard Forward" },
+  //   { value: "Forward", label: "Forward" },
+  //   { value: "Center", label: "Center" },
+  //   { value: "Guard", label: "Guard" },
+  // ];
 
   return (
     <div className="App">
@@ -76,12 +77,12 @@ export function App() {
       {/*  styles={customStyleSelect}*/}
       {/*  classNamePrefix="custom-select"*/}
       {/*/>*/}
-      <CustomSelect
-        data={players}
-        styles={multiStyleSelect}
-        isMulti={true}
-        classNamePrefix="custom-select"
-      />
+      {/*<CustomSelect*/}
+      {/*  data={players}*/}
+      {/*  styles={multiStyleSelect}*/}
+      {/*  isMulti={true}*/}
+      {/*  classNamePrefix="custom-select"*/}
+      {/*/>*/}
       {/*<CustomSelect*/}
       {/*  data={numbers}*/}
       {/*  styles={countStyleSelect}*/}
@@ -114,7 +115,8 @@ export function App() {
       {/*  teamName={"Portland trail blazers"}*/}
       {/*/>*/}
       {/*<ImgUpload />*/}
-      <Table />
+      {/*<Table />*/}
+      <MobileSidebar />
     </div>
   );
 }

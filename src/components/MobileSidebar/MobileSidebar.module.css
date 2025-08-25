@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 201px;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--lightestWhite);
+}
+
+.profile {
+    width: 100%;
+}
+
+
+.profileIcon {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+    border-bottom: 1px solid var(--lightGrey);
+    width: 100%;
+    height: 80px;
+}
+
+.profileName {
+    padding-left: 8px;
+    color: var(--darkGrey);
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 32px 20px;
+}
+
+.wrap > *:nth-child(2) {
+    margin-top: 36px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+
+}
+
+.personIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--lightGrey);
+    padding-left: 8px;
+}
+
+.signOut {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+
+.inputIcon {
+    width: 24px;
+    height: 24px;
+    fill: var(--lightestRed);
+    margin-bottom: 4px;
+}
+
+.signOutText {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--lightestRed);
+    padding-left: 8px;
+}

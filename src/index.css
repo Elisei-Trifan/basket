@@ -1,32 +1,36 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 80px;
 }
 
 body {
-  margin: 0;
-  font-family: Avenir, sans-serif;
-  font-weight: 500;
+    margin: 0;
+    font-family: Avenir, sans-serif;
+    font-weight: 500;
 }
 
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 @font-face {
-  font-family: Avenir;
-  src: url('/public/assets/fonts/Avenir-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+    font-family: Avenir;
+    src: url('/public/assets/fonts/Avenir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
