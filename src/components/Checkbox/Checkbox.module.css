@@ -1,82 +1,83 @@
 .container {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 24px;
 }
 
 .input {
-  display: none;
+    display: none;
 }
 
 .checkbox {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  border: 1px solid var(--lightGrey);
-  border-radius: 2px;
-  margin-right: 8px;
-  transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 1px solid var(--lightGrey);
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .checkboxErr {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  border: 1px solid var(--lightestRed);
-  border-radius: 2px;
-  margin-right: 8px;
-  transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 1px solid var(--lightestRed);
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .input:not(:disabled):hover + .checkbox {
-  border: 1px solid var(--red);
+    border: 1px solid var(--red);
 }
 
 .input:disabled + .checkbox {
-  cursor: not-allowed;
-  background-color: #f6f6f6;
+    cursor: not-allowed;
+    background-color: #f6f6f6;
 }
 
 .input:checked + .checkbox {
-  background-color: var(--red); /* Цвет для активного состояния */
-  border-color: var(--red);
+    background-color: var(--red); /* Цвет для активного состояния */
+    border-color: var(--red);
 }
 
 .input:disabled:checked + .checkbox {
-  background-color: var(--lightestGrey);
-  border-color: var(--lightestGrey);
+    background-color: var(--lightestGrey);
+    border-color: var(--lightestGrey);
 }
 
 .input:checked + .checkbox::after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 4px;
-  width: 3px;
-  height: 7px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .input:disabled + .checkbox + .text {
-  color: var(--lightestGrey);
-  cursor: not-allowed;
+    color: var(--lightestGrey);
+    cursor: not-allowed;
 }
 
 .text {
-  color: var(--lightGrey);
+    color: var(--lightGrey);
 }
 
 .textErr {
-  color: var(--lightestRed);
+    color: var(--lightestRed);
 }
 
 .error {
-  margin: 0;
-  font-size: 12px;
-  color: var(--lightestRed);
+    margin: 0;
+    font-size: 12px;
+    color: var(--lightestRed);
 }

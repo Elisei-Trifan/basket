@@ -23,7 +23,8 @@ import { Ex2 } from "./components/ex2";
 import { Table } from "./components/Table/Table";
 import { MobileSidebar } from "./components/MobileSidebar/MobileSidebar";
 import { Route, Router, Routes } from "react-router-dom";
-import { SignIn } from "./Pages/SignIn/SignIn";
+import { SignIn } from "./Pages/SignIn";
+import { SignUp } from "./Pages/SignUp";
 
 export function App() {
   // const [value, setValue] = React.useState("");
@@ -54,7 +55,8 @@ export function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<SignIn />} />
+      <Route path="/signIn" element={<SignIn />} />
+      <Route path="/signUp" element={<SignUp />} />
     </Routes>
   );
 }

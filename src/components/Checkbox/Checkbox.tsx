@@ -2,22 +2,20 @@ import React from "react";
 import styles from "./Checkbox.module.css";
 
 interface CheckboxProps {
-  text: string;
+  text?: string;
   disabled?: boolean;
   error?: string;
+  checked?: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Checkbox: React.FC<CheckboxProps> = ({
   text,
   disabled,
   error,
+  checked,
+  onChange,
 }) => {
-  const [checked, setChecked] = React.useState(false);
-
-  const handleChange = () => {
-    setChecked((prev) => !prev);
-  };
-
   return (
     <>
       <label className={styles.container}>
@@ -25,7 +23,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
           type="checkbox"
           checked={checked}
           className={styles.input}
-          onChange={handleChange}
+          onChange={onChange}
           disabled={disabled}
         />
         <span className={error ? styles.checkboxErr : styles.checkbox}></span>
