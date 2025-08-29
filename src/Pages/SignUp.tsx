@@ -13,7 +13,7 @@ export const SignUp = () => {
       buttonType={"sign"}
       switchText={"Already a member?"}
       switchLinkText={"Sign In"}
-      switchTo={"/signIn"}
+      switchTo={"/"}
       image={SignUpImg}
     />
   );

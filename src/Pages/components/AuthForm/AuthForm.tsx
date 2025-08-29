@@ -27,7 +27,10 @@ export const AuthForm = ({
     formState: { errors, isValid },
     handleSubmit,
     watch,
-  } = useForm();
+  } = useForm({
+    mode: "onChange",
+    reValidateMode: "onChange",
+  });
 
   const onSubmit = (data: any) => {
     console.log(data);
@@ -35,10 +38,7 @@ export const AuthForm = ({
 
   const password = watch("password");
 
-  const disabled =
-    title === "Sign Up"
-      ? !checked || Object.keys(errors).length > 0 || !isValid
-      : Object.keys(errors).length > 0 || !isValid;
+  const disabled = title === "Sign Up" ? !checked || !isValid : !isValid;
 
   return (
     <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
